@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lista de Compras — localStorage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Lista de Compras</h1>
+
+      <form id="add-form" class="add-form">
+        <input id="item-input" type="text" placeholder="Adicione um item (ex: Leite)" autocomplete="off" />
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <section class="controls">
+        <button id="clear-btn" class="danger">Limpar tudo</button>
+      </section>
+
+      <ul id="items" class="items"></ul>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

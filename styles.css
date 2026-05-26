@@ -1,0 +1,46 @@
+:root{
+  --bg:#f7f7fb;
+  --card:#ffffff;
+  --accent:#2b7a78;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:#111;
+  margin:0;
+  padding:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+}
+.app{
+  width:100%;
+  max-width:720px;
+  background:var(--card);
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(20,20,40,0.06);
+}
+h1{margin:0 0 12px 0}
+.add-form{display:flex;gap:8px;margin-bottom:12px}
+.add-form input{flex:1;padding:10px;border:1px solid #e6e6ef;border-radius:8px;font-size:16px}
+.add-form button{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+.controls{display:flex;justify-content:flex-end;margin-bottom:8px}
+.danger{background:#ff6b6b;color:#fff;border:none;padding:8px 10px;border-radius:8px;cursor:pointer}
+.items{list-style:none;padding:0;margin:0}
+.item{display:flex;align-items:center;gap:12px;padding:10px;border-bottom:1px solid #f0f0f5}
+.item:last-child{border-bottom:none}
+.item input[type="checkbox"]{width:18px;height:18px}
+.name{flex:1}
+.name.bought{text-decoration:line-through;color:var(--muted)}
+.actions{display:flex;gap:8px}
+.actions button{background:transparent;border:1px solid #e6e6ef;padding:6px 8px;border-radius:8px;cursor:pointer}
+.actions .primary{border-color:var(--accent);color:var(--accent)}
+
+@media(max-width:420px){
+  body{padding:12px}
+  .app{padding:14px}
+}
