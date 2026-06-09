@@ -25,7 +25,7 @@ body{
   align-items:center;
   justify-content:center;
   min-height:100vh;
-}
+ }
 body.theme-dark{
   --bg:#161f19;
   --body-gradient: radial-gradient(circle at top left, #1f2a23 0%, #17261d 40%, #111a15 100%);

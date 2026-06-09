@@ -8,7 +8,7 @@ function getList(){
   }catch(e){
     return []
   }
-}
+ }
 
 function getTheme(){
   return localStorage.getItem(THEME_KEY) || 'light'
